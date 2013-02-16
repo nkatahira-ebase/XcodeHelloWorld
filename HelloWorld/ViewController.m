@@ -3,7 +3,8 @@
 //  HelloWorld
 //
 //  Created by katahira on 2013/01/29.
-//  Copyright (c) 2013年 QualitySeason. All rights reserved.
+//  Copyright (c) 2013年 QualitySeason. All rights reserved.//
+//
 //
 
 #import "ViewController.h"
@@ -12,12 +13,20 @@
 
 @end
 
-@implementation ViewController
+@implementation ViewController {
+    IBOutlet UILabel *lbl_HelloWorld;
+    IBOutlet UIButton *btn_HelloWorld;
+}
+
+- (IBAction)CallHelloWprId{
+    lbl_HelloWorld.text = @"HelloWorld!!";
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    // testtets
 }
 
 - (void)didReceiveMemoryWarning
